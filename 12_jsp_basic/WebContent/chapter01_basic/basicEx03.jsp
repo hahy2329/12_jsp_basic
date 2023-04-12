@@ -25,7 +25,7 @@
 	<hr>
 	<%  
 		Date temp = new Date();
-		SimpleDateFormat sdf = new SimpleDateFormat("yyyy-mm-dd hh:mm:ss");
+		SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd hh:mm:ss");
 		
 		String now = sdf.format(temp);
 	
