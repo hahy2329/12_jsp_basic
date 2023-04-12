@@ -6,28 +6,26 @@
 <title>연습문제</title>
 </head>
 <body>
-
-	<table border="1">
+	<table border = "1">
 		<%
-			int i=1;
-			
-			while(i<=10){
-		%>		
-			<tr>	
-				<td><%=i %>번</td>
-			</tr>
+			for(int i=1; i<=10; i++){
 				
-		<% 		
-				i++;
+		%>	
+			<tr>
+				<td><%=i %>번</td>
+			</tr>	
+				
+		<%		
 			}
-		
 		
 		%>
 	
 	
 	
 	
+	
 	</table>
+	
 
 </body>
 </html>

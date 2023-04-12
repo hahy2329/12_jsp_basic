@@ -6,42 +6,38 @@
 <title>연습문제</title>
 </head>
 <body>
-
 	<table border="1">
 		<%
-			int i = 1;
-			
-			while(i<=10){
+			for(int i =0; i<10; i++){
+				if(i%2==0){
+					
+				
+		%>
+				<tr>
+					<td style ="background-color: skyblue;"><%=i %>번</td>
+				</tr>
+		<% 		
+				}
+				else{
 		%>		
 			<tr>
-			
-		<%
-			if(i%2 ==0){
+				<td style="background-color: yellow;"><%=i %>번</td>
+			</tr>		
+					
+		<% 			
+				}
 				
-		
-		%>		
-			<td style ="background-color : skyblue;"><%=i %>번</td>		
-		<% 		
-			}
-			else{
 				
-		%>
-			<td style ="background-color : yellow"><%=i %>번</td>
-				
-		<%		
-			}
-		%>	
-			</tr>	
-				
-		<% 		
-				i++;
 			}
 		
+		
 		%>
+	
 	
 	
 	
 	
 	</table>
+	
 </body>
 </html>

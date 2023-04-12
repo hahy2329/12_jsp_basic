@@ -13,7 +13,7 @@
 		# JSP(Java Server Page)는 html태그 위에 jsp태그가 추가된 형태로 사용되어진다.
 		 
 	    1) 지시자(Directive) 태그        	<%@    %>
-	    2) 선언자(Declration) 태그      	<%!    %> 함수 만들기 
+	    2) 선언자(Declaration) 태그      	<%!    %> 함수 만들기 
 	    3) 표현식(Expression) 태그      	<%=    %> 자바 만든 걸 뽑아내기
 	    4) 스크립트릿(Scriptlet) 태그  	<%     %>	자바코드 짜기
 
