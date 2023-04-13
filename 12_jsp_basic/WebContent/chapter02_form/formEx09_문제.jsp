@@ -14,36 +14,36 @@
 	
 	--%>			
 	
-	<form>
+	<form action="formEx09Pro_정답.jsp" method="post">
 		<fieldset>
 			<legend>회원가입 폼</legend>
-			<p>아이디 :   <input type="text" /></p>
-			<p>비밀번호 : <input type="password" /></p>
-			<p>이름 :     <input type="text" /></p>
-			<p>나이 :     <input type="text" /></p>
+			<p>아이디 :   <input type="text" name="id" /></p>
+			<p>비밀번호 : <input type="password" name= "passwd"/></p>
+			<p>이름 :     <input type="text" name = "name" /></p>
+			<p>나이 :     <input type="text" name="age"/></p>
 			<p>
-				성별 : <input type="radio" value="m"/>남자
-			   		   <input type="radio" value="f"/>여자
+				성별 : <input type="radio" value="m" name="sex"/>남자
+			   		   <input type="radio" value="f" name="sex"/>여자
 			</p>
 			<p>
-				취미 : <input type="checkbox" value="운동"/>운동
-					   <input type="checkbox" value="잠자기"/>잠자기
-					   <input type="checkbox" value="공부하기"/>공부하기
+				취미 : <input type="checkbox" value="운동" name="hobby"/>운동
+					   <input type="checkbox" value="잠자기" name="hobby"/>잠자기
+					   <input type="checkbox" value="공부하기" name="hobby"/>공부하기
 			</p>
 			<p>
 				가고 싶은 여행지는
-				<select>
-					<option>괌</option>
-					<option>다낭</option>
-					<option>나트랑</option>
-					<option>코타키나발루</option>
-					<option>대만</option>
-					<option>푸꾸옥</option>
+				<select name="travel">
+					<option value="괌">괌</option>
+					<option value="다낭">다낭</option>
+					<option value="나트랑">나트랑</option>
+					<option value="코타키나발루">코타키나발루</option>
+					<option value="대만">대만</option>
+					<option value="푸꾸욱">푸꾸옥</option>
 				</select>
 			</p>
 			<p>
 				메모<br/>
-				<textarea rows="10" cols="50" ></textarea>
+				<textarea rows="10" cols="50" name="memo" ></textarea>
 			</p>
 			<p>
 				<input type="submit" value="회원가입"/>
