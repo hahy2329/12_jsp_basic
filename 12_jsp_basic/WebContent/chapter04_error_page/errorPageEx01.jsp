@@ -21,8 +21,8 @@
 		
 			[ 방법 ]
 		
-			1) web.xml에 아래의 코드를 추가한다.
-		
+			1) web.xml에 아래의 코드를 추가한다. (설정파일)
+		 - Servers(톰캣) - web.xml경로임(클릭 후 디자인이 아닌 소스탭에서 맨 밑에 적어준다.)
 			<error-page>
 				<error-code>500</error-code>
 				<location>/errorPage/500.jsp</location>       
@@ -40,14 +40,22 @@
 	 -->
 	 
 	 <%
-	 	//500 에러
+	 	//500 에러 : 시스템 에러(서버오류)
 	 	//System.out.println();
 	 
-	 	Class.forName("com.mysql.cj.jdbc.Driver");
-	 	conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/join_ex?serverTimezone=UTC" , "root" , "root");
+	 	//Class.forName("com.mysql.cj.jdbc.Driver");
+	 	// conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/join_ex?serverTimezone=UTC" , "root" , "root");
 	 
 	 %>
-
+	 
+	 <!-- 404에러: 페이지를 찾을 수 없음(즉,클라가 서버를 찾지 못함) -->
+	
+	
+	<a href="abcdefg.jsp">페이지 이동</a>
+	
+	<form action="aaa.jsp">
+		<input type="submit">
+	</form>
 	
 </body>
 </html>
