@@ -56,6 +56,12 @@
 	
 	%>
 	
+	<!-- 확인 -->
+	
+	<p>bean1 : <%=bean1.getPdNm() %></p> <!-- 가져오겠다. -->
+	<p>bean2 : <%=bean2.getPdNm() %>, <jsp:getProperty property="pdNm" name="bean2"/></p>
+	<p>bean2 : <%=bean3.getPdNm() %>, <jsp:getProperty property="pdNm" name="bean3"/></p>
+	
 
 
 </body>
