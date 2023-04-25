@@ -1,6 +1,7 @@
 package _07_el_jstl;
 
 import java.io.IOException;
+import java.util.ArrayList;
 
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
@@ -21,6 +22,21 @@ public class ElEx01 extends HttpServlet {
 		request.setAttribute("name", "팀 버너스 리");
 		request.setAttribute("num1", 12);
 		request.setAttribute("num2", 3);
+		
+		ArrayList<String> list1 = null;//안만들어짐
+		ArrayList<String> list2 = new ArrayList<String>(); // 만들어져 있지만 통만 있음
+		ArrayList<String> list3 = new ArrayList<String>(); // ;;
+		list3.add("data1");
+		list3.add("data2");
+		list3.add("data3");
+		
+		
+		request.setAttribute("list1", list1);
+		request.setAttribute("list2", list2);
+		request.setAttribute("list3", list3);
+		
+		
+		
 		
 		
 		RequestDispatcher dis = request.getRequestDispatcher("chapter07_el_jstl/elEx01.jsp");
