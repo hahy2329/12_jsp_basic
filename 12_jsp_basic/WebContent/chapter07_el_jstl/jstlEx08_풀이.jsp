@@ -21,15 +21,16 @@
  	<c:set var="dbId" value="qwer1234" />
  	<c:set var="dbPw" value="1234" />
  	
- 	
- 	<c:choose>	
- 	<c:when test="${dbId eq userId and dbPw eq userPw}">
- 		<h3>로그인 성공</h3>
- 	</c:when>
- 	<c:otherwise>
- 		<h3>로그인 실패</h3>
- 	</c:otherwise>
+ 	<c:choose>
+ 		<c:when test="${id eq dbId and pw eq dbPw }">
+ 			<h3>로그인 성공</h3>
+ 		</c:when>
+ 		<c:otherwise>
+ 			<h3>로그인 실패</h3>
+ 		</c:otherwise>
+ 		
  	</c:choose>
+ 	
  	
  	
 </body>

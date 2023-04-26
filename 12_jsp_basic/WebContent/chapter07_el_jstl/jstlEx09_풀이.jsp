@@ -17,19 +17,20 @@
 		   isChecked값이 false이면 script에서 alert함수로 '확인되지 않았습니다.'를 출력한다.
 	
 	 -->
-	<c:choose>
-	<c:when test="${isChecked eq true }">
-		<script>
-			alert("확인되었습니다.");
-		</script>
-	</c:when>
-	<c:when test="${isChecked eq false }">
-		<script>
-			alert("확인되지 않았습니다.")
-		</script>
-	</c:when>
-	</c:choose>
-	
-		
+	 
+	 <c:choose>
+	 	<c:when test="${isChecked eq true }">
+	 		<script>
+	 			alert("확인되었습니다.");
+	 		</script>
+	 	
+	 	</c:when>
+	 	
+	 	<c:otherwise>
+	 		alert("확인되지 않았습니다.");
+	 	</c:otherwise>
+	 
+	 </c:choose>
+
 </body>
 </html>

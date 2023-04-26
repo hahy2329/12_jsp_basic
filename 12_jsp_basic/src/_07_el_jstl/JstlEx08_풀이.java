@@ -15,12 +15,8 @@ public class JstlEx08_풀이 extends HttpServlet {
        
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		
-		request.setAttribute("userId", "qwer1234");
-		request.setAttribute("userPw", "1234");
-		
-		
-		
-		
+		request.setAttribute("id", "qwer1234");
+		request.setAttribute("pw", "1234");
 		
 		RequestDispatcher dis = request.getRequestDispatcher("chapter07_el_jstl/jstlEx08_풀이.jsp"); 
 		dis.forward(request, response);

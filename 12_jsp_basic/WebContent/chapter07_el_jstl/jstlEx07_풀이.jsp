@@ -1,5 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
-<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"  %>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -21,16 +22,21 @@
 	
 	
 	-->
+	<c:choose>
+		<c:when test='${me eq "바위" }'>
+			<h3>비겼다.</h3>
+		</c:when>
+		<c:when test='${me eq "보" }'>
+			<h3>내가 이겼다.</h3>
+		
+		</c:when>
+		<c:when test='${me eq "가위" }'>
+			<h3>내가 졌다.</h3>
+		
+		</c:when>
 	
-	<c:if test='${me eq "바위" }'>
-		<h1>비겼다.</h1>
-	</c:if>
-	<c:if test='${me eq "보" }'>
-		<h1>내가 이겼다.</h1>
-	</c:if>
-	<c:if test='${me eq "가위" }'>
-		<h1>내가 졌다.</h1>
-	</c:if>
+	</c:choose>
+	
 	
  	
 </body>

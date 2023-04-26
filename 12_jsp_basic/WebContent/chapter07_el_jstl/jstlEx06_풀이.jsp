@@ -30,18 +30,19 @@
 	<fmt:parseNumber var="me" value="${me }"/>
 	
 	<c:choose>
-		<c:when test="${con eq me }">
-			<h1>Bingo!</h1>
+		<c:when test="${com eq me }">
+			<h3>Bingo!</h3>
+		
 		</c:when>
+							
 		<c:when test="${com lt me }">
-			<h1>Down!</h1>
+			<h3>Down!</h3>
 		</c:when>
+		
 		<c:when test="${com gt me }">
-			<h1>Up!</h1>
+			<h3>Up!</h3>
 		</c:when>
+	
 	</c:choose>
-	
-	
-	
 </body>
 </html>
