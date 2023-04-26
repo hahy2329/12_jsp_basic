@@ -64,7 +64,10 @@
 	<c:forEach var="data" items="${datas }">
 		${data } &nbsp; <!-- 띄어쓰기 한 번 -->
 	</c:forEach>
-	
+	<hr>	
+	<c:forEach var="data" items="${datas }" varStatus="i">
+		${data } &nbsp; / ${i.count } / ${i.index } / ${i.first } / ${i.last }<br> <!-- 띄어쓰기 한 번 -->
+	</c:forEach>
 	<hr>
 	
 	<table border="1">
