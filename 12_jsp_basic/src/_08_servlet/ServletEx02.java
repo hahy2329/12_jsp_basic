@@ -1,4 +1,4 @@
-package _08_sevlet;
+package _08_servlet;
 
 import java.io.IOException;
 

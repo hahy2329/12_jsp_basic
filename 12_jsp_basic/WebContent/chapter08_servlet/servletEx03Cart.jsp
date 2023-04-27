@@ -3,19 +3,16 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>servletEx03Action</title>
+<title>${pageTitle }</title>
 </head>
 <body>
 
 	<h4>session 확인 : ${sessionScope.id } / ${sessionScope.role } / ${sessionScope.isMobile }</h4>
 	
+	
 	<hr>
 	
-	<p><a href="servletEx03MyPage">마이 페이지로 이동하기</a></p>
-	<p><a href="servletEx03Cart">장바구니로 이동하기</a></p>
-	
-	
-	
+	<h4>request확인 : ${name } / ${contact }</h4>
 	
 </body>
 </html>

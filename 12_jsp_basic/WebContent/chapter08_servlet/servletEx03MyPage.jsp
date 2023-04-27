@@ -12,8 +12,8 @@
 	
 	<hr>
 	
-	<h3>리퀘스트 확인 : ${name }/ ${contact }</h3>
+	<h3>리퀘스트 확인 : ${name }/ ${contact } / ${sessionScope.role } / ${sessionScope.isMobile }</h3>
 	<!-- 혹은 ${requestScope.name}도 가능함. -->
-
+	
 </body>
 </html>

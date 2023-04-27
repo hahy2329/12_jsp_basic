@@ -1,4 +1,4 @@
-package _08_sevlet;
+package _08_servlet;
 
 import java.io.IOException;
 
@@ -30,7 +30,7 @@ public class ServletEx03MyPage extends HttpServlet {
 		
 		
 		
-		RequestDispatcher dis = request.getRequestDispatcher("chapter08_servlet/servletEx03Mypage.jsp");
+		RequestDispatcher dis = request.getRequestDispatcher("chapter08_servlet/servletEx03MyPage.jsp");
 		dis.forward(request, response);
 		
 	}	
