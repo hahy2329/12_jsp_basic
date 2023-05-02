@@ -1,4 +1,4 @@
-package _06_file;
+package _05_bean;
 
 import java.io.File;
 import java.io.IOException;
