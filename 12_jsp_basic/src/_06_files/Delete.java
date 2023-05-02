@@ -19,6 +19,13 @@ public class Delete extends HttpServlet {
 	
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		
+		
+		
+		
+	}
+
+
+	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		request.setCharacterEncoding("utf-8");
 		String deleteFileName = request.getParameter("deleteFileName");
 		String saveDirectory = "C:\\Users\\12_web_hjs\\git\\12_jsp_basic\\12_jsp_basic\\WebContent\\chapter06_file\\file_repository\\";
@@ -46,13 +53,6 @@ public class Delete extends HttpServlet {
 		response.setContentType("text/html; charset=UTF-8");
 		PrintWriter out = response.getWriter();
 		out.print(jsScript);
-		
-		
-	}
-
-
-	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		
 	}
 
 }
